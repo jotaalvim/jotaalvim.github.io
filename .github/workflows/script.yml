@@ -7,6 +7,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      MY_CUSTOM_SECRET_NAME: ${{ secrets.BLOG_SECRET }} 
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -16,13 +19,21 @@ jobs:
       with:
         python-version: '3.11' 
 
-    #- name: Navigate to ../docs
-    #  run: cd docs/
     - name: Install Python dependencies
       run: pip install -r requirements.txt 
-
 
     - name: Create a blog html and update the table of contents
       run: |
         cd docs/
         python3 create-blog.py
+
+    - name: Push changes
+      run: |
+        git config --global user.email "joaoafonsoalvim@gmail.com"
+        git config --global user.name "jotaalvim"
+        git add .
+        git commit -m "Update blog"
+        git push --set-upstream origin main
+
+      env:
+        MY_CUSTOM_SECRET_NAME: ${{ secrets.BLOG_SECRET }}
