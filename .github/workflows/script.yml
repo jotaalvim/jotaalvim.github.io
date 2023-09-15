@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to trigger the action on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11' 
+
+    - name: Navigate to ../docs
+      run: cd ../docs
+
+    - name: Create the blog html and update the table of contents
+      run: python create-blog.py
