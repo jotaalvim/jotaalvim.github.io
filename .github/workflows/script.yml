@@ -18,8 +18,11 @@ jobs:
 
     #- name: Navigate to ../docs
     #  run: cd docs/
+    - name: Install Python dependencies
+      run: pip install -r requirements.txt 
 
-    - name: Create the blog html and update the table of contents
+
+    - name: Create a blog html and update the table of contents
       run: |
         cd docs/
         python3 create-blog.py
