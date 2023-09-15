@@ -17,7 +17,7 @@ jobs:
         python-version: '3.11' 
 
     - name: Navigate to ../docs
-      run: cd ../docs
+      run: cd docs/
 
     - name: Create the blog html and update the table of contents
       run: python create-blog.py
