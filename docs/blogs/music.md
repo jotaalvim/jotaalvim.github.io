@@ -1,5 +1,5 @@
 2023-14-09
-# Why not be immortal?
+# Porque não ser imortal?
 
 À medida que o tempo passa  existe uma dessensibilização dos sentimentos.
 Quando uma pessoa se habitua aos sentimentos que vive eles vão ficando menos intensos.
@@ -11,4 +11,5 @@ Temos que proibir nascimentos para prevenir crescimento da população, porque n
 
 ### Qual é o sentido de vida de um ser imortal?
 
-Tenho a ideia de que quanto maior for a dificuldade de uma tarefa mair será a sensação de recompensa e de realização ao concretiza-la. Por isso o que seria uma tarefa difícil para um imortal? Esculpir um castelo do monte evareste com uma colher desafio
+Quanto maior for a dificuldade de uma tarefa mair será a sensação de recompensa e de realização ao concretiza-la. Por isso o
+que seria uma tarefa difícil para um imortal? Esculpir um castelo do monte evareste com uma colher desafio?

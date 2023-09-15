@@ -32,14 +32,14 @@ html ="""
 
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/rubiks2.png" alt="rubik" style="width:72%">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/rubiks2.png" alt="rubik" style="width:72%">
           </a>
         </div>
         <ul class="nav navbar-nav">
-          <!-- <li><a href="index.html"><h3>about me</h3></a></li> -->
-          <li><a href="blog.html"><h3>blog</h3></a></li>
-          <li><a href="vitae.html"><h3>curriculum vitæ</h3></a></li>
+          <!-- <li><a href="../index.html"><h3>about me</h3></a></li> -->
+          <li><a href="../blog.html"><h3>blog</h3></a></li>
+          <li><a href="../vitae.html"><h3>curriculum vitæ</h3></a></li>
         </ul>
       </div>
     </nav>
@@ -48,6 +48,8 @@ html ="""
     <div class="container">
 """
 foot = """
+    <br>
+    <br>
     </div>
     <footer>
       <div class="jumbotron">
@@ -108,39 +110,42 @@ for file in items:
 
     newhtml = re.sub(r'<\s*p\s*>','<p style="font-size: 16px;">',newhtml)
 
-    
     blog_pos = html + newhtml + foot
 
 
     newpath = os.path.join(directory_path,file[:-3]+'.html')
     with open(newpath, "w") as wfile:
+        #print(blog_pos)
         wfile.write(blog_pos)
 
     table_of_contents.append((title,date,newpath))
 
-    print(date)
-    print(title)
-
-    print(table_of_contents)
-
-
-
-
-# fixme para depois
-#sorted(a, key=lambda x: x[1])
+    #print(date)
+    #print(title)
+    #print(table_of_contents)
 
 
 
 
 
-post = """
+blog_toc = html           # sort by date
+for t,d,n in sorted(table_of_contents, key=lambda x: x[1]):
+    blog_toc += f"""
       <li>
         <ul>
-          <a href="#"> <h2>Será a música um meta sentimento?</h2> </a>
+          <a href="{newpath}">{title}</a>
           <p style="font-size: 17px;">2023-09-14</p>
         </ul>
       </li>
-
       <br>
 """
+
+blog_toc += foot
+
+with open('blog.html', "w") as wfile:
+    blog_toc = re.sub(r'../img/rubiks2.png','img/rubiks2.png',blog_toc)
+    blog_toc = re.sub(r'../vitae.html','vitae.html',blog_toc)
+    blog_toc = re.sub(r'../blog.html','blog.html',blog_toc)
+    blog_toc = re.sub(r'../index.html','index.html',blog_toc)
+    wfile.write(blog_toc)
 
