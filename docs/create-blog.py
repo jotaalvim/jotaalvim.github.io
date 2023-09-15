@@ -127,18 +127,21 @@ for file in items:
 
 
 
-
 blog_toc = html           # sort by date
-for t,d,n in sorted(table_of_contents, key=lambda x: x[1]):
+sl = sorted(table_of_contents, key=lambda x: x[1])
+for b in sl.reverse():
+    print(b)
+    t,d,n  = b
     blog_toc += f"""
       <li>
         <ul>
-          <a href="{newpath}">{title}</a>
-          <p style="font-size: 17px;">2023-09-14</p>
+          <a href="{n}">{t}</a>
+          <p style="font-size: 17px;">{d}</p>
         </ul>
       </li>
       <br>
 """
+print(blog_toc)
 
 blog_toc += foot
 
