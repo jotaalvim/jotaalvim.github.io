@@ -16,8 +16,14 @@ jobs:
       with:
         python-version: '3.11' 
 
+    - name: pdw
+      run: pdw
+
     - name: Navigate to ../docs
       run: cd docs/
+
+    - name: pdw
+      run: pdw
 
     - name: Create the blog html and update the table of contents
       run: python create-blog.py
