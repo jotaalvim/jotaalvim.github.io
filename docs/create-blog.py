@@ -84,6 +84,7 @@ try:
     for file in items:
         if file[-3:] != ".md":
             items.remove(file)
+    print(items)
 except:
     items = []
 
@@ -114,6 +115,7 @@ for file in items:
 
 
     newpath = os.path.join(directory_path,file[:-3]+'.html')
+    print(newpath)
     with open(newpath, "w") as wfile:
         #print(blog_pos)
         wfile.write(blog_pos)
@@ -129,9 +131,7 @@ for file in items:
 
 blog_toc = html           # sort by date
 sl = sorted(table_of_contents, key=lambda x: x[1])
-print(sl)
 sl.reverse()
-print(sl)
 
 for b in sl:
     t,d,n  = b
@@ -144,9 +144,6 @@ for b in sl:
       </li>
       <br>
 """
-
-print(blog_toc)
-
 blog_toc += foot
 
 with open('blog.html', "w") as wfile:
