@@ -80,10 +80,11 @@ foot = """
 directory_path = 'blogs/'
 
 try:
-    items = os.listdir(directory_path)
-    for file in items:
-        if file[-3:] != ".md":
-            items.remove(file)
+    itemst = os.listdir(directory_path)
+    print(itemst)
+    for file in itemst:
+        if file[-3:] == ".md":
+            items.append(file)
     print(items)
 except:
     items = []
