@@ -83,6 +83,7 @@ try:
     itemst = os.listdir(directory_path)
     print(itemst)
     items = []
+    # FIXME usar glob
     for file in itemst:
         if file[-3:] == ".md":
             items.append(file)

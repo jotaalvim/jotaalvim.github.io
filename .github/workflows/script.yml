@@ -24,8 +24,6 @@ jobs:
 
     - name: Create a blog html and update the table of contents
       run: |
-        apt install pandoc
-        pandoc --version
         cd docs/
         python3 create-blog.py
 
