@@ -82,6 +82,7 @@ directory_path = 'blogs/'
 try:
     itemst = os.listdir(directory_path)
     print(itemst)
+    items = []
     for file in itemst:
         if file[-3:] == ".md":
             items.append(file)
