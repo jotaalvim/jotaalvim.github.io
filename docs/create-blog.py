@@ -129,8 +129,11 @@ for file in items:
 
 blog_toc = html           # sort by date
 sl = sorted(table_of_contents, key=lambda x: x[1])
-for b in sl.reverse():
-    print(b)
+print(sl)
+sl.reverse()
+print(sl)
+
+for b in sl:
     t,d,n  = b
     blog_toc += f"""
       <li>
@@ -141,6 +144,7 @@ for b in sl.reverse():
       </li>
       <br>
 """
+
 print(blog_toc)
 
 blog_toc += foot

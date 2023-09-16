@@ -1,4 +1,4 @@
-2023-14-09
+2023-09-15
 # Porque não ser imortal?
 À medida que o tempo passa  existe uma dessensibilização dos sentimentos.
 Quando uma pessoa se habitua aos sentimentos que vive eles vão ficando menos intensos.
