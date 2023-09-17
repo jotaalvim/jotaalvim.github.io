@@ -1,0 +1,20 @@
+p {
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar {
+    padding: 20px 0; 
+}
+.navbar-nav li a {
+    font-size: 25px; 
+}
+.navbar-brand {
+display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    margin-right: 10px;
+}
+.navbar-brand span {
+    font-size: 25px;  
+}

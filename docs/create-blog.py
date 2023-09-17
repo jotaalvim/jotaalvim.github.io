@@ -6,74 +6,49 @@ html ="""
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <title>João Alvim</title>
     <meta charset="utf-8">
     <!-- ensures proper rendering for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="../style.css">
 
-    <!-- jQuery library
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    -->
-    <!-- Latest compiled JavaScript
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    -->
   </head>
 
   <body>
 
-    <nav class="navbar navbar-default">
-
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../img/rubiks2.png" alt="rubik" style="width:72%">
-          </a>
-        </div>
-        <ul class="nav navbar-nav">
-          <!-- <li><a href="../index.html"><h3>about me</h3></a></li> -->
-          <li><a href="../blog.html"><h3>blog</h3></a></li>
-          <li><a href="../vitae.html"><h3>curriculum vitæ</h3></a></li>
-        </ul>
+  <nav class="navbar navbar-default">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="../index.html">
+                  <div class="d-flex align-items-center">
+                      <img src="../img/rubiks2.png" alt="rubik" style="width:37%">
+                      <span class="ml-auto">João Alvim</span>
+                  </div>
+              </a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../vitae.html">Curriculum Vitæ</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
       </div>
-    </nav>
+  </nav>
 
    
-    <div class="container">
+    <div class="container mx-auto" style="max-width:50%;">
 """
 foot = """
     <br>
     <br>
     </div>
-    <footer>
-      <div class="jumbotron">
-        <div class="container-fluid">
-          <div class="text-center">
-            <div class="mx-auto">
-              <!-- <h2>Contact Information</h2> -->
-
-              <p style="font-size: 16px;">github: <a
-                  href="https://github.com/jotaalvim">github.com/jotaalvim</a></p>
-              <p style="font-size: 16px;">email: <a
-                  href="mailto:joaoafonsoalvim@gmail.com">joaoafonsoalvim@gmail.com</a></p>
-              <p style="font-size: 16px;">location: Braga, Portugal</p>
-              <p style="font-size: 16px;">phone: +351 934662832</p>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </footer>
-
   </body>
-
 </html>
 """
 
@@ -111,8 +86,7 @@ for file in items:
     title = re.sub(r'h\d','h2',title,2)
 
     newhtml = '\n'.join(lines)
-
-    newhtml = re.sub(r'<\s*p\s*>','<p style="font-size: 16px;">',newhtml)
+    #newhtml = re.sub(r'<\s*p\s*>','<p style="font-size: 16px;">',newhtml)
 
     blog_pos = html + newhtml + foot
 
@@ -124,11 +98,6 @@ for file in items:
         wfile.write(blog_pos)
 
     table_of_contents.append((title,date,newpath))
-
-    #print(date)
-    #print(title)
-    #print(table_of_contents)
-
 
 
 
@@ -142,7 +111,7 @@ for b in sl:
       <li>
         <ul>
           <a href="{n}">{t}</a>
-          <p style="font-size: 17px;">{d}</p>
+          {d}
         </ul>
       </li>
       <br>
@@ -154,5 +123,6 @@ with open('blog.html', "w") as wfile:
     blog_toc = re.sub(r'../vitae.html','vitae.html',blog_toc)
     blog_toc = re.sub(r'../blog.html','blog.html',blog_toc)
     blog_toc = re.sub(r'../index.html','index.html',blog_toc)
+    blog_toc = re.sub(r'../style.css','style.css',blog_toc)
     wfile.write(blog_toc)
 
