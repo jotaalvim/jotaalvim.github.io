@@ -8,7 +8,7 @@ de uma referência temporal. Por exemplo, ao marcar uma consulta não basta dize
 consultório 205" ou "a consulta fica no dia 15", precisamos de associar o tempo ao espaço e o espaço ao
 tempo. Quando pensamos em pontos no espaço associamos inconscientemente um instante no tempo.
 
-## Prisão do tempo
+# Prisão do tempo
 Posso pensar que amanhã vou acordar no meu quarto, será isso um evento comum? Apesar de parecer uma
 coisa regular, não é um evento comum porque só acontece uma vez. Por isso não faz sentido falar da
 raridade de um evento, mas sim de singularidade. A raridade está associado a objetos e singularidade a
