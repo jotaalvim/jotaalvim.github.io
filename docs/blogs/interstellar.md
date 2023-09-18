@@ -23,6 +23,5 @@ universidade, esse acontecimento é um ponto no novo espaço dimensional!
 No filme Interstellar o amor, juntamente com a gravidade, é usado para comunicar com o passado. Transcende
 e atravessa o espaço e o tempo.
 
-# 6ª dimensão
-Qual é a 6ª dimensão?
-Se estamos presos no tempo, qual é a perspetiva de quem existe da 4ª dimensão, estarão presos no amor?
+Vale a pena provar a existência do amor? Também não é possível provar a existência do tempo.
+Se Amor não depende do tempo nem do espaço, então de que depende?
