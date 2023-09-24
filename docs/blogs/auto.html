@@ -41,16 +41,18 @@
    
     <div class="container mx-auto" style="max-width:50%;">
 <h1>Automação de blogs</h1>
-<p>Criei um site pessoal onde existe este blog. 
+<p>Criei um site pessoal onde existe este blog.
 Para escrever texto uso o prático markdown. Como não queria ser eu a converter de markdown para html à mão, decidi fazer
-um script que me faz isso automaticamente. 
-Quando correr esse <a href="https://github.com/jotaalvim/jotaalvim.github.io/blob/main/docs/create-blog.py">script</a> há uma atualização
+um script que me faz isso automaticamente.
+Quando corro esse <a href="https://github.com/jotaalvim/jotaalvim.github.io/blob/main/docs/create-blog.py">script</a> há uma atualização
 da table of contents dos blogs, e também de cada blog individualmente.</p>
-<h1>Uma vez que tenho a geração do website automatizada porque é que tenho que ser eu a correr esse script?</h1>
+<h2>Uma vez que tenho a geração do website automatizada porque é que tenho que ser eu a correr esse script?</h2>
 <p>Felizmente existe uma ferramenta que lida com esse tipo de situações: <a href="https://github.com/features/actions">github action</a>. O
-github action permite automatizar um pipeline de instruções.</p>
-<p>No meu caso quando faço commit de um blog em notação markdown para o github, este automaticamente recalcula as novas páginas do
-website e coloca no "ar" em 2 minutos. Diminuindo o meu trabalho ao simples upload do blog. </p>
+github action permite automatizar um pipeline de instruções.
+No meu caso quando faço commit de um blog em notação markdown para o github, é automaticamente executado o tal programa.
+O git recalcula as novas páginas do website e coloca no "ar" em 2 minutos. Reduz o meu trabalho ao simples upload do
+texto em markdown. Se sou preguiçoso para montar um esquema que me transforme o texto de um blog numa página web
+automaticamente, por que não fazer algo para me construir o texto? Assim podia ser mais preguiçoso e não tinha que fazer nada.</p>
     <br>
     <br>
     </div>
