@@ -1,4 +1,4 @@
-2023-9-3
+2023-09-23
 # Automação de blogs
 
 Criei um site pessoal onde existe este blog.
