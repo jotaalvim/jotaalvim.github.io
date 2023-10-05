@@ -12,7 +12,8 @@ da table of contents dos blogs, e também de cada blog individualmente.
 Felizmente existe uma ferramenta que lida com esse tipo de situações: [github action](https://github.com/features/actions). O
 github action permite automatizar um pipeline de instruções.
 No meu caso quando faço commit de um blog em notação markdown para o github, é automaticamente executado o tal programa.
-O git recalcula as novas páginas do website e coloca no "ar" em 2 minutos. Reduz o meu trabalho ao simples upload do
-texto em markdown. Se sou preguiçoso para montar um esquema que me transforme o texto de um blog numa página web
-automaticamente, por que não fazer algo para me construir o texto? Assim podia ser mais preguiçoso e não tinha que fazer nada.
+O git recalcula as novas páginas do website e coloca no "ar" em 2 minutos. Reduz o meu trabalho ao simples upload do texto em markdown. 
+
+Se sou preguiçoso para montar um esquema que me transforme o texto de um blog numa página web
+automaticamente, por que não utilizar o chat gpt para me construir o texto? Assim não tinha que fazer nada.
 
