@@ -7,10 +7,10 @@ Assemelha-se ao ouro, porque não se destrói com facilidade e não se pode impr
 
 # Onde está a estabilidade do bitcoin?
 Preço do bitcoin:
-[bit](/img/bitcoing.png)
+![bit](/img/bitcoing.png)
 
 Preço do ouro:
-[bit](/img/gold.png)
+![bit](/img/gold.png)
 O bitcoin é muito recente, a curto prazo até o ouro tem especulação, mas a longo prazo o preço irá estabilizar.
 
 # Proliferação das sociedades durante o padrão de ouro
