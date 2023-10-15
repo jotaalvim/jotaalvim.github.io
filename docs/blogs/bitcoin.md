@@ -24,8 +24,7 @@ Por exemplo, taxas de 115% inflação anual na Argentina dificultam as
 pessoas a pouparem e investirem. Sentem-se obrigadas a gastar todo o seu dinheiro
 porque no próximo mês vale menos 9.6% do que valia. Como é suposto as pessoas pouparem e investirem nessas situações?
 
-
-# dinheiro fiat
+E quando não há padrão de ouro?
 Quando começou a I guerra mundial, a primeira coisa que a maioria dos países fez foi largar esse standard.
 Assim tinham a opção de poder imprimir todo o dinheiro que precisa-sem para pagar a guerra. Não teve bons resultados
 em nada...
