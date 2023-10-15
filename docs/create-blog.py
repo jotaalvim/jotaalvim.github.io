@@ -84,7 +84,7 @@ for file in items:
     title = lines.pop(0)
     lines.insert(0,title)
     # COLOCAR OS TITULOS COM TAMANHO 2
-    title = re.sub(r'h\d','h2',title,2)
+    title = re.sub(r'h\d','h3',title,2)
 
     newhtml = '\n'.join(lines)
     #newhtml = re.sub(r'<\s*p\s*>','<p style="font-size: 16px;">',newhtml)
