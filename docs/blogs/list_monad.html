@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>João Alvim</title>
+    <meta charset="utf-8">
+    <!-- ensures proper rendering for mobile 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    -->
+
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="../style.css">
+
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-default">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="../index.html">
+                  <div class="d-flex align-items-center">
+                      <img src="../img/rubiks2.png" alt="rubik" style="width:37%">
+                      <span class="ml-auto">João Alvim</span>
+                  </div>
+              </a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../vitae.html">Curriculum Vitæ</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+
+   
+    <div class="container mx-auto" style="max-width:50%;">
+<h1>Is it possible to implement the List Monad in Scratch?</h1>
+<p>Sometimes the idea of doing unusefull and hard things excites me, implementing the <a href="https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List">list monad</a> in <a href="https://scratch.mit.edu/">scratch</a> was one of those. </p>
+<p>For sake of simplicity, to implement the list monad I going to define 4 different functions:
+* <code>return :: a -&gt; [a]</code>  for injecting a value into a list
+* <code>map :: (a -&gt; b) -&gt; [a] -&gt; [b]</code>   for aplllying a function to all elements of a list
+* <code>join :: [[a]] -&gt; [a]</code> for grouping nested monads (lists in this case)
+* <code>bind :: [a] -&gt; (a -&gt; [b]) -&gt; [b]</code> for concatenating the results of applying a function to each element of a list</p>
+<h2>Scratch</h2>
+<p>Doing thigs in Scratch is a difficult challenge because concepts we have for granted in other languages do not exits in scratch.</p>
+    <br>
+    <br>
+    </div>
+  </body>
+</html>
