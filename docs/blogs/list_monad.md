@@ -1,7 +1,7 @@
 2024-02-04
 # Is it feasible to create the List Monad in Scratch?
 
-Sometimes the idea of doing unuseful and hard things excites me, implementing the [list monad](https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List) in [scratch](https://scratch.mit.edu/) was one of those.
+Sometimes the idea of doing unuseful and hard things excites me, implementing the [list monad](https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List) in [scratch](https://scratch.mit.edu/) was one of those. Scratch already has implemented the List datatype making our lives easier.
 
 
 To make things simple, I'll only create four functions to implement the list monad:
@@ -12,7 +12,7 @@ To make things simple, I'll only create four functions to implement the list mon
 *  ``` join :: [[a]] -> [a] ``` for grouping nested monads (lists in this case)
 *  ``` bind :: [a] -> (a -> [b]) -> [b] ``` for concatenating the results of applying a function to each element of a list
 
-## Scratch 
+## Scratch
 Doing things in Scratch is a difficult challenge. Concepts we have taken for granted in other languages do not exist in scratch. Besides actually implementing the list monad, I had to collaborate with the fact that there's:
 
 * No higher order and no function pointers
@@ -38,7 +38,13 @@ I can't pass functions as arguments in scratch, but I can pass strings. I create
 
 ![bit](/img/scratch-apply.png)
 
-
-## MAP
-
+## Map
+To map each element, I'm assuming there's already content in a list registry. Because there's no return statement, after applying the function to each element, I have to get back the result from EAX.
 ![bit](/img/scratch-map.png)
+
+
+## Join
+I don't know if it's possible to make a concat operation because when I can't iterate a nested list, I don't know how many elements there are, so I may have to make my own length function.
+## Bind
+
+## Use cases
