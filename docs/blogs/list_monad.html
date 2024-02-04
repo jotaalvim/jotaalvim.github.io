@@ -40,17 +40,35 @@
 
    
     <div class="container mx-auto" style="max-width:50%;">
-<h1>Is it possible to implement the List Monad in Scratch?</h1>
-<p>Sometimes the idea of doing unusefull and hard things excites me, implementing the <a href="https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List">list monad</a> in <a href="https://scratch.mit.edu/">scratch</a> was one of those. </p>
-<p>For sake of simplicity, to implement the list monad I going to define 4 different functions:</p>
+<h1>Is it feasible to create the List Monad in Scratch?</h1>
+<p>Sometimes the idea of doing unuseful and hard things excites me, implementing the <a href="https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List">list monad</a> in <a href="https://scratch.mit.edu/">scratch</a> was one of those.</p>
+<p>To make things simple, I'll only create four functions to implement the list monad:</p>
 <ul>
 <li><code>return :: a -&gt; [a]</code>  for injecting a value into a list</li>
-<li><code>map :: (a -&gt; b) -&gt; [a] -&gt; [b]</code>  for aplllying a function to all elements of a list</li>
+<li><code>map :: (a -&gt; b) -&gt; [a] -&gt; [b]</code>  for applying a function to all elements of a list</li>
 <li><code>join :: [[a]] -&gt; [a]</code> for grouping nested monads (lists in this case)</li>
 <li><code>bind :: [a] -&gt; (a -&gt; [b]) -&gt; [b]</code> for concatenating the results of applying a function to each element of a list</li>
 </ul>
 <h2>Scratch</h2>
-<p>Doing thigs in Scratch is a difficult challenge because concepts we have for granted in other languages do not exits in scratch. Besides actually impleting the list monad</p>
+<p>Doing things in Scratch is a difficult challenge. Concepts we have taken for granted in other languages do not exist in scratch. Besides actually implementing the list monad, I had to collaborate with the fact that there's:</p>
+<ul>
+<li>No higher order and no function pointers</li>
+<li>No return statements</li>
+<li>Only static variables</li>
+</ul>
+<p>To my surprise, there's already a very similar programming language, Assembly!</p>
+<h2>Dealing with return statements</h2>
+<p>Let's analyze the function successor written in c (left), which is implemented in assembly (right).
+<img alt="bit" src="/img/assembly-succ.png" /></p>
+<p>We can see that it uses the auxiliary registry EAX to "return" the result. This means the function that is calling succ will assume the result is going to end up stored in the EAX variable. So creating an EAX variable in Scratch with the same purpose seems reasonable.</p>
+<p>Here is the definition of successor, predessecor, and identity function in scratch:
+<img alt="bit" src="/img/scratch-succ.png" /></p>
+<h2>Solving  higher order</h2>
+<p>New problems start to emerge when I want to apply a specific function without being hardcoded. This means that the definition of map is going to be the same regardless of the function for which I want to map each element.</p>
+<p>I can't pass functions as arguments in scratch, but I can pass strings. I created a function with the sole purpose of running and applying arguments to functions. To simplify, I'm only using functions of ariety 1, and I have to manually insert them here:</p>
+<p><img alt="bit" src="/img/scratch-apply.png" /></p>
+<h2>MAP</h2>
+<p><img alt="bit" src="/img/scratch-map.png" /></p>
     <br>
     <br>
     </div>
