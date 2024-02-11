@@ -42,9 +42,14 @@ I can't pass functions as arguments in scratch, but I can pass strings. I create
 To map each element, I'm assuming there's already content in a list registry. Because there's no return statement, after applying the function to each element, I have to get back the result from EAX.
 ![bit](/img/scratch-map.png)
 
+## Return 
+How I'm I going to make a function that creates lists? This time assembly was't the solution, because the only way to create a list is to click in "add list" button. I could, in theory, pre-create X amount of lists but still I wouldn't be able to know which one to use. 
+
 
 ## Join
-I don't know if it's possible to make a concat operation because when I can't iterate a nested list, I don't know how many elements there are, so I may have to make my own length function.
-## Bind
+It's impossible to make a concat operation, Scract has this problem that I can acces numbers and string passed as arguments but I can't access lists. My first try was using the "letter 1 of <arg> " block, however when applied to nested lists it woulf take the firt letter of the first list. This block would work if every elemente of those lists had only 1 char long. This means I can't iterate trouhg nested lists without beeing hardcodeed. 
 
-## Use cases
+
+# Conclusion
+
+When i Took this challenge I didn't expect it to be non-viable. However implement the list monad, 
