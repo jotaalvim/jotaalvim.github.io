@@ -53,4 +53,4 @@ It's impossible to make a concat operation, Scract has this problem that I can a
 
 # Conclusion
 
-When i Took this challenge I didn't expect it to be non-viable. However implement the list monad, 
+When I took this challenge, I didn't expect it to be non-viable. Implementing the list monad in such a painful language made me appreciate much more features we counted on from other programming languages.
