@@ -48,7 +48,10 @@ How I'm I going to make a function that creates lists? This time assembly was't 
 
 
 ## Join
-It's impossible to make a concat operation, Scract has this problem that I can acces numbers and string passed as arguments but I can't access lists. My first try was using the "letter 1 of <arg> " block, however when applied to nested lists it woulf take the firt letter of the first list. This block would work if every elemente of those lists had only 1 char long. This means I can't iterate trouhg nested lists without beeing hardcodeed. 
+It's impossible to perform a concatenation operation. Scract has this problem: I can access numbers and strings passed as
+arguments, but I can't access lists. My first try was using the "letter 1 of" block, which, when applied to nested lists,
+would take the first letter of the first list. This block would work if every element of those lists was only 1 character
+long. This means I can't iterate through nested lists without being hardcoded. 
 
 
 # Conclusion
