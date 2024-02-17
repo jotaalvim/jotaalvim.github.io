@@ -19,7 +19,8 @@ html ="""
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="../style.css">
-
+"""
+html_part2 = """
   </head>
 
   <body>
@@ -78,10 +79,18 @@ for file in items:
 
     # retirar data e título
     lines = html_content.split('\n')
-    date  = lines.pop(0)
-    date = re.sub(r'<\s*p\s*>','<p style="font-size: 17px;">',date)
-
+    date2  = lines.pop(0)
+    date  = re.sub(r'<\s*p\s*>','<p style="font-size: 17px;">',date2)
     title = lines.pop(0)
+
+    meta_info = f"""
+    <meta property="og:title" content="{title[4:-5]}">
+    <meta property="og:description" content="{title[4:-5] + " - " + date2[3:-4]}">
+    <meta property="og:image" ="../img/rubiks2.png">
+"""
+
+
+
     lines.insert(0,title)
     # COLOCAR OS TITULOS COM TAMANHO 2
     title = re.sub(r'h\d','h3',title,2)
@@ -89,7 +98,7 @@ for file in items:
     newhtml = '\n'.join(lines)
     #newhtml = re.sub(r'<\s*p\s*>','<p style="font-size: 16px;">',newhtml)
 
-    blog_pos = html + newhtml + foot
+    blog_pos = html + meta_info + html_part2 + newhtml + foot
 
 
     newpath = os.path.join(directory_path,file[:-3]+'.html')
