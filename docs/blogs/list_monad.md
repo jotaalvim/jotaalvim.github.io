@@ -7,10 +7,10 @@ Sometimes the idea of doing unuseful and hard things excites me, implementing th
 
 To make things simple, I'll try to create the basic four functions needed to implement the list monad:
 
-* ``` map    :: (a -> b) -> [a] -> [b]   ``` for applying a function to all elements of a list
-* ``` join   :: [[a]] -> [a]             ``` for grouping nested monads (lists in this case)
-* ``` return :: a -> [a]                 ``` for injecting a value into a list
-* ``` bind   :: [a] -> (a -> [b]) -> [b] ``` for concatenating the results of applying a function to each element of a list
+* ``` map    :: (a -> b) -> [a] -> [b]``` &nbsp; &nbsp; - for applying a function to all elements of a list
+* ``` join   :: [[a]] -> [a]  ```&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; - for grouping nested monads (lists in this case)
+* ``` return :: a -> [a] ```&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - for injecting a value into a list
+* ``` bind   :: [a] -> (a -> [b]) -> [b] ``` - for concatenating the results of applying a function to each element of a list
 
 ## Scratch
 Doing things in Scratch is a difficult challenge. Concepts we have taken for granted in other languages do not exist in scratch. Besides actually implementing the list monad, I had to collaborate with the fact that there's:
