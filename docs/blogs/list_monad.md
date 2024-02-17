@@ -7,9 +7,9 @@ Sometimes the idea of doing unuseful and hard things excites me, implementing th
 
 To make things simple, I'll try to create the basic four functions needed to implement the list monad:
 
-* ``` map    :: (a -> b) -> [a] -> [b]``` &nbsp; &nbsp; - for applying a function to all elements of a list
+* ``` map    :: (a -> b) -> [a] -> [b]``` &nbsp; &nbsp; &nbsp; - for applying a function to all elements of a list
 * ``` join   :: [[a]] -> [a]  ```&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; - for grouping nested monads (lists in this case)
-* ``` return :: a -> [a] ```&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - for injecting a value into a list
+* ``` return :: a -> [a] ```&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - for injecting a value into a list
 * ``` bind   :: [a] -> (a -> [b]) -> [b] ``` - for concatenating the results of applying a function to each element of a list
 
 ## Scratch
