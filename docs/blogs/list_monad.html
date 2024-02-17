@@ -42,12 +42,12 @@
     <div class="container mx-auto" style="max-width:50%;">
 <h1>Is it feasible to create the List Monad in Scratch?</h1>
 <p>Sometimes the idea of doing unuseful and hard things excites me, implementing the <a href="https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List">list monad</a> in <a href="https://scratch.mit.edu/">scratch</a> was one of those. Scratch already has implemented the List datatype making our lives easier.</p>
-<p>To make things simple, I'll only create four functions to implement the list monad:</p>
+<p>To make things simple, I'll try to create the basic four functions needed to implement the list monad:</p>
 <ul>
-<li><code>return :: a -&gt; [a]</code>  for injecting a value into a list</li>
-<li><code>map :: (a -&gt; b) -&gt; [a] -&gt; [b]</code>  for applying a function to all elements of a list</li>
-<li><code>join :: [[a]] -&gt; [a]</code> for grouping nested monads (lists in this case)</li>
-<li><code>bind :: [a] -&gt; (a -&gt; [b]) -&gt; [b]</code> for concatenating the results of applying a function to each element of a list</li>
+<li><code>map    :: (a -&gt; b) -&gt; [a] -&gt; [b]</code> for applying a function to all elements of a list</li>
+<li><code>join   :: [[a]] -&gt; [a]</code> for grouping nested monads (lists in this case)</li>
+<li><code>return :: a -&gt; [a]</code> for injecting a value into a list</li>
+<li><code>bind   :: [a] -&gt; (a -&gt; [b]) -&gt; [b]</code> for concatenating the results of applying a function to each element of a list</li>
 </ul>
 <h2>Scratch</h2>
 <p>Doing things in Scratch is a difficult challenge. Concepts we have taken for granted in other languages do not exist in scratch. Besides actually implementing the list monad, I had to collaborate with the fact that there's:</p>
