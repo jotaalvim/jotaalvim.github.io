@@ -5,13 +5,12 @@
 Sometimes the idea of doing unuseful and hard things excites me, implementing the [list monad](https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List) in [scratch](https://scratch.mit.edu/) was one of those. Scratch already has implemented the List datatype making our lives easier.
 
 
-To make things simple, I'll only create four functions to implement the list monad:
+To make things simple, I'll try to create the basic four functions needed to implement the list monad:
 
-
-* ``` return :: a -> [a] ```  for injecting a value into a list
-* ``` map :: (a -> b) -> [a] -> [b] ```  for applying a function to all elements of a list
-*  ``` join :: [[a]] -> [a] ``` for grouping nested monads (lists in this case)
-*  ``` bind :: [a] -> (a -> [b]) -> [b] ``` for concatenating the results of applying a function to each element of a list
+* ``` map    :: (a -> b) -> [a] -> [b]   ``` for applying a function to all elements of a list
+* ``` join   :: [[a]] -> [a]             ``` for grouping nested monads (lists in this case)
+* ``` return :: a -> [a]                 ``` for injecting a value into a list
+* ``` bind   :: [a] -> (a -> [b]) -> [b] ``` for concatenating the results of applying a function to each element of a list
 
 ## Scratch
 Doing things in Scratch is a difficult challenge. Concepts we have taken for granted in other languages do not exist in scratch. Besides actually implementing the list monad, I had to collaborate with the fact that there's:
