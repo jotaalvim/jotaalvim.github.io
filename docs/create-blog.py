@@ -86,7 +86,7 @@ for file in items:
     meta_info = f"""
     <meta property="og:title" content="{title[4:-5]}">
     <meta property="og:description" content="{title[4:-5] + " - " + date2[3:-4]}">
-    <meta property="og:image" ="../img/rubiks2.png">
+    <meta property="og:image" content="../img/rubiks2.png">
 """
 
 
