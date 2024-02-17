@@ -40,6 +40,7 @@ I can't pass functions as arguments in scratch, but I can pass strings. I create
 
 ## Map
 To map each element, I'm assuming there's already content in a list registry. Because there's no return statement, after applying the function to each element, I have to get back the result from EAX.
+
 ![bit](/img/scratch-map.png)
 
 ## Return 
