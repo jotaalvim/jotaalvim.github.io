@@ -89,8 +89,6 @@ for file in items:
     <meta property="og:image" content="../../img/rubiks2.png">
 """
 
-
-
     lines.insert(0,title)
     # COLOCAR OS TITULOS COM TAMANHO 2
     title = re.sub(r'h\d','h3',title,2)
@@ -98,6 +96,7 @@ for file in items:
     newhtml = '\n'.join(lines)
     #newhtml = re.sub(r'<\s*p\s*>','<p style="font-size: 16px;">',newhtml)
 
+    print(len(html_part2),"PARTE 2")
     blog_pos = html + meta_info + html_part2 + newhtml + foot
 
 
@@ -111,7 +110,7 @@ for file in items:
 
 
 
-blog_toc = html           # sort by date
+blog_toc = html + html_part2          # sort by date
 sl = sorted(table_of_contents, key=lambda x: x[1])
 sl.reverse()
 
