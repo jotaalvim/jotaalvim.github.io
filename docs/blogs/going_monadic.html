@@ -45,50 +45,51 @@
    
     <div class="container mx-auto" style="max-width:50%;">
 <h1>Going Monadic</h1>
-<p>https://github.com/jotaalvim/jotaalvim-tools/blob/main/ddf/del.hs</p>
 <p>This is tutorial explains how to make a script to remove duplicated files in a directory in Haskell.
 As so this program was written as an introduction to <strong>monadic  programming</strong>. </p>
 <p>I'm going to use <strong>md5 hash</strong> do compare each file. This means that files with the same md5 have the the same content and so are duplicated.</p>
-<p><code>haskell
-md5 :: ByteString -&gt; Digest MD5
+<p><code>md5 :: ByteString -&gt; Digest MD5
 md5 = hash</code></p>
-<p>A ByteString is a binary string, it's a block of memory with the file content, this function receives a file content (in bytestring form) and hash's it.</p>
+<p>A <strong>ByteString</strong> is a binary string, it's a <strong>block of memory with the file content</strong>, this function receives a file content (in bytestring form) and hash's it.</p>
+<hr />
 <p>Lets read a file content with  <code>readFile :: FilePath -&gt; IO ByteString</code> a function that takes a String (FilePath) and returns the binary content of a file inside an IO. To escape  IO we can use left arrow <code>&lt;-</code> . This arrow decapsulate the things inside IO. In this example : 
 <code>(content &lt;- readFile fp)</code> content is not of type IO ByteString but ByteString. </p>
-<p>I'll return a pair of the file's name and it's hash:
-<code>haskell
-makeHash :: FilePath -&gt; IO (FilePath, Digest MD5) 
+<p>I'll return a pair of the <strong>file's name</strong> and it's <strong>hash</strong>:</p>
+<p><code>makeHash :: FilePath -&gt; IO (FilePath, Digest MD5) 
 makeHash fp = do
     content &lt;- readFile fp
     return (fp, md5 content)</code></p>
 <p>Assuming I apply this function to every file in a directory I can find which files are duplicated by comparing the second element of each pair (hash).</p>
-<p>Algorithmically finding duplicated items in a list is equivalent to substrancting ( \\ - list subtraction ) to the original list,  the same list  but without duplicates:
-<code>haskell
-duplicated l = l \\ nubBy (\(_,b)(_,d) -&gt; b == d) l</code></p>
+<p>Algorithmically finding duplicated items in a list is equivalent to substrancting ( \\ - list subtraction ) to the original list,  the same list  but without duplicates:</p>
+<p><code>duplicated l = l \\ nubBy (\(_,b)(_,d) -&gt; b == d) l</code></p>
 <details>
-  <summary> a more interesting way to define duplicated </summary>
+
+  <summary> <p> a more interesting way to define duplicated</p> </summary>
         There's one combinator that allow us to make this function pointfree and it's the bind >>=.
-    ```haskell
+    ```
     duplicated = nubBy (\(_,b)(_,d) -> b == d) >>= flip (\\)
     ```
         It might not make sence but here's a simple definition of bind that does not use monadic power, this makes it possible to rearrange the inputs we pass to numBy and (\\).
-    ```haskell
+    ```
     (>>=) :: (a -> b) -> (b -> a -> c) -> a -> c
     f >>= k = \ r -> k (f r) r
     ```
 </details>
 
+<hr />
 <p>The next step is to map makeHash to every element of a directory.
 Suppose we have a list of strings that are file paths, to map them to makeHash means to produce a list with IO inside  because <code>makeHash :: FilePath -&gt; IO (FilePath, Digest MD5)</code></p>
 <p><code>ghci&gt; :t map makeHash
 map makeHash :: [FilePath] -&gt; [IO (FilePath, Digest MD5)]</code></p>
-<p>That's getting weird, We need to traverse the list and swap the IO monad with the List so that we produce the more intuitive <code>IO [(FilePath, Digest MD5)]</code>. You can read that type as "a side effect that produces Lists of pair of filepath and it's hash". </p>
-<p>The way to this is with the sequence functions, it swaps 2 nested monads!
-<code>ghci&gt; :t sequence
+<p>That's getting weird, We need to <strong>traverse the list and swap the IO monad with the List</strong> so that we produce the more intuitive <code>IO [(FilePath, Digest MD5)]</code>. You can read that type as "a side effect that produces Lists of pair of filepath and it's hash". </p>
+<hr />
+<p>The way to this is with the sequence functions, it swaps 2 nested monads!</p>
+<p><code>ghci&gt; :t sequence
 sequence :: (Traversable t, Monad m) =&gt; t (m a) -&gt; m (t a)</code></p>
 <p>This way we produce the final result</p>
 <p><code>ghci&gt; :t sequence . map makeHash
 sequence . map makeHash :: [FilePath] -&gt; IO [(FilePath, Digest MD5)]</code></p>
+<p>https://github.com/jotaalvim/jotaalvim-tools/blob/main/ddf/del.hs</p>
     <br>
     <br>
     </div>
