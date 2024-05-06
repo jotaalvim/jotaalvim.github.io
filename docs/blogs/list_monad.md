@@ -2,7 +2,7 @@
 # Is it feasible to create the List Monad in Scratch?
 
 
-Sometimes the idea of doing unuseful and hard things excites me, implementing the [list monad](https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List) in [scratch](https://scratch.mit.edu/) was one of those. Scratch already has implemented the List datatype making our lives easier.
+Sometimes the idea of doing unuseful and challenging things excites me, implementing the [list monad](https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List) in [scratch](https://scratch.mit.edu/) was one of those. Scratch already has implemented the List datatype making our lives easier.
 
 
 To make things simple, I'll try to create the basic four functions needed to implement the list monad:

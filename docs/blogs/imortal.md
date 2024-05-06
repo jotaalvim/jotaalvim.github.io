@@ -15,13 +15,10 @@ difícil teria que ser um objetivo para um imortal?
 
 Quando uma pessoa vive vai-se habituando 
 aos sentimentos e eles ficam menos intensos. 
-As coisas tornar-se-iam repetitivas e previsíveis. No extremo poderá provocar
+As coisas tornar-se-iam repetitivas e previsíveis. No caso extremo, ser imortal poderá provocar
 uma desregulação nas pessoas onde empatia ou remorso já não são
-sentidas. No caso extremo tornam-se psicopatas. Seria possível existir
-uma sociedade funcional com 100% de psicopatas? Não porque os psicopatas
-são impulsivos e fazem o que querem sem "usar" a consciência moral humana,
+sentidas, a longo prazo tornam-se iam psicopatas? Será possível existir
+uma sociedade funcional com 100% de psicopatas? Os psicopatas
+são impulsivos, fazem o que querem sem "usar" a consciência moral humana,
 seríamos como os animais?
-
-
-
 
