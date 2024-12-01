@@ -77,8 +77,7 @@ ghci> :t sequence
 sequence :: (Traversable t, Monad m) => t (m a) -> m (t a)   
 ```
 
-This way we produce the final result
-
+This way we produce a side effect that produces Lists of pair of filepath and it's hash.
 
 ```
 ghci> :t sequence . map makeHash
@@ -86,4 +85,4 @@ sequence . map makeHash :: [FilePath] -> IO [(FilePath, Digest MD5)]
 ```
 
 
-https://github.com/jotaalvim/jotaalvim-tools/blob/main/ddf/del.hs
+This blog is not yet finished; The original code can explored here [file](https://github.com/jotaalvim/jotaalvim-tools/blob/main/ddf/del.hs)
