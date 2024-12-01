@@ -86,10 +86,10 @@ map makeHash :: [FilePath] -&gt; [IO (FilePath, Digest MD5)]</code></p>
 <p>The way to this is with the sequence functions, it swaps 2 nested monads!</p>
 <p><code>ghci&gt; :t sequence
 sequence :: (Traversable t, Monad m) =&gt; t (m a) -&gt; m (t a)</code></p>
-<p>This way we produce the final result</p>
+<p>This way we produce a side effect that produces Lists of pair of filepath and it's hash.</p>
 <p><code>ghci&gt; :t sequence . map makeHash
 sequence . map makeHash :: [FilePath] -&gt; IO [(FilePath, Digest MD5)]</code></p>
-<p>https://github.com/jotaalvim/jotaalvim-tools/blob/main/ddf/del.hs</p>
+<p>This blog is not yet finished; The original code can explored here <a href="https://github.com/jotaalvim/jotaalvim-tools/blob/main/ddf/del.hs">file</a></p>
     <br>
     <br>
     </div>
