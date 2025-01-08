@@ -1,8 +1,7 @@
 2024-12-01
 # Bitcoin
 
-O bitcoin é uma moeda considerada forte porque é difícil produzir
-em grandes quantidades. 
+O bitcoin é uma moeda considerada forte porque é difícil produzir em grandes quantidades. 
 Assemelha-se ao ouro, porque não se destrói com facilidade e não se pode imprimir o que provoca desvalorização da moeda. A longo prazo estima-se estabilidade do preço.
 
 # Vantagens bitcoin
@@ -25,7 +24,7 @@ porque no próximo mês vale menos ~10% do que valia. Como é suposto as pessoas
 Se o bitcoin é forma de fugir ao sistema moentário controlado por terceiros, porque é que a maioria das pessoas
 que vive em países onde a inflação é alta, 115% como Argentina ou 80% como a Turquia, não as usam?
 
-Na Argentina as pessoas comprar dollars para fugir a inflação da sua moeda. Parece que o bitcoin não está a ser usado como seu intuito original. 
+Na Argentina as pessoas compram dollars para fugir a inflação da sua moeda. Parece que o bitcoin não está a ser usado como seu intuito original. 
 
 Aliás pode não ser boa solução, transações com essa moeda são em muitos países declaradas ilegais pelos governos. 
 
