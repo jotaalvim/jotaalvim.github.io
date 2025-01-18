@@ -1,4 +1,4 @@
-2024-12-01
+2023-12-01
 # Bitcoin
 
 O bitcoin é uma moeda considerada forte porque é difícil produzir em grandes quantidades. 
