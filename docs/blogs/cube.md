@@ -1,7 +1,6 @@
 2025-04-21
 # Epistemic Limits of Computation
 
-
 Kurt Gödel, in his Incompleteness Theorems, states that an expressive formal system cannot be both consistent and complete at the same time. This leads to some unintuitive consequences, such as the existence of true statements that cannot be proven within the system, or that a system cannot prove its own consistency.
 
 It is possible to construct such statements as: "I am not provable in this system." This statement leads to a paradox: if we could prove it, we would contradict its own message, and if we cannot prove it, then it is true, which again contradicts the assumption that it is unprovable. As so, we conclude that the statement is true but unprovable.
