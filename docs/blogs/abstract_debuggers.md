@@ -15,5 +15,3 @@ Is this technique actually better for refining hypotheses about programs by expl
 
 
 One may argue that abstract debuggers are wrong as they may reach a somewhat incorrect results due to over-approximations. We might reach an abstraction that is impossible to reach on the concrete original program. Even if "wrong" I believe that they're still useful because humans still find meaning in "incorrect" things such as analogies. Even quantum-mechanics, besides ultra precise prediction does not vividly correspond to nature, and still people use it.
-
-One may argue that abstract debuggers are flawed because they can produce somewhat incorrect results due to over-approximations. We might reach an abstraction that is impossible to reach in the original concrete program. Even if they are "wrong", I believe they are still useful, because humans often find meaning in "incorrect" things, such as analogies. Even quantum mechanics, despite its ultra-precise predictions, does not vividly correspond to nature, and yet people continue to use it.
