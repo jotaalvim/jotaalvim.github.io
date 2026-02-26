@@ -1,6 +1,13 @@
 2026-02-26
 # How Natural is Artifical Intelligent?
 
+TLDR:
+I think the simple architecture brought unbelievable results. The way ChatGPT like AIs articulate is so aligned with reality and with what I observe that I
+have difficulty distinguishing the real from their simulation and I wonder if we can live in the same world as equal? Given that machines can perform very
+closely to humans I feel like the human brain is not so mysterious any more.
+
+---
+
 I recall a conversation with a great friend where he suggested that the AI hype is an overreaction by people who don’t really understand how rigid a system it is, and that its architecture will never make it a truly intelligent being. I instinctively knew that I disagreed with him, but at the time I did not know exactly how to express how he should perceive something like an Artificial Intelligence.
 
 I have seen AIs evolve and make fewer mistakes over time, and I have always been impressed by their capabilities. I find the idea of giving all digital data produced by humans to a machine fascinating (mostly open data). Their rigid algorithms are able to mimic the way we write, even interchanging writing styles and structures. They pick up on things like prejudice and bias, they pick up the way we think and approach problems and situations.
@@ -20,7 +27,3 @@ got so good results and is cognitively better than humans at many tasks.  One of
  I cannot wrap my head around how one can remember things and concept such as memory don't make any sense. It looks impossible that a brain composed of
  such "simple" architecture,  functions so amazingly. The point I'm trying to make is if AI is not truly intelligent, neither are we. 
 
-TLDR:
-I think the simple architecture brought unbelievable results. The way ChatGPT like AIs articulate is so aligned with reality and with what I observe that I
-have difficulty distinguishing the real from their simulation and I wonder if we can live in the same world as equal? Given that machines can perform very
-closely to humans I feel like the human brain is not so mysterious any more.
