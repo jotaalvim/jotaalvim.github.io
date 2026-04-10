@@ -13,7 +13,7 @@ Também não é claro como dar nomes a conceitos abstratos, como emoções e sen
 
 Quando procuramos a verdade, na forma de raciocínio ou a fazer ciência, temos que levar as coisas o mais literal possível, caso
 contrário abrimos portas à imprecisão. O que faz uma linguagem mais ambígua não é a quantidade de símbolos ou palavras
-expressáveis, mas o nosso comportamento perante elas.
+expressáveis, mas o nosso comportamento e interpretaçao perante elas.
 
 
 ---
