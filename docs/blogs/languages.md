@@ -23,7 +23,7 @@ What a curious example this unusual approach to finding prime numbers is. If cal
 
 Perception plays a large role, the following meme, while analogous, underlines an important fact.
 
-![fish meme](/img/fish_meme.png)
+![fish meme](/img/fish_meme.jpg)
 
 "Wet" refers to the presence of moisture or liquid, and "dry" to the absence of it. Both the person and the fish fail to realize that the **context of "wet" and "dry"is very specific** and not generic at all. Does this concept only apply to seawater, or can it be extended to distilled water or any other liquids? An interesting piece of information appears in [Is glass liquid or solid?](https://www.desy.de/user/projects/Physics/General/Glass/glass.html), where the authors conclude that there is not a clear definition of the distinction between solids and highly viscous liquids. Hypothetically, assuming we included any other liquids in the "wet" definition, to someone whose context is that he lives surrounded by a solid would also be able to argue that both the fish and the human are dry.
 
