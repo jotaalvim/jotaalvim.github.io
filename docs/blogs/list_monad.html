@@ -48,7 +48,7 @@
         <span class="date">2024-02-04</span>
         <a class="tag" href="../blog.html?q=scratch">scratch</a><a class="tag" href="../blog.html?q=functional+programming">functional programming</a><a class="tag" href="../blog.html?q=monads">monads</a><a class="tag" href="../blog.html?q=programming+languages">programming languages</a>
       </p>
-<p>Sometimes the idea of doing unuseful and challenging things excites me, implementing the <a href="https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List">list monad</a> in <a href="https://scratch.mit.edu/">scratch</a> was one of those. Scratch already has implemented the List datatype making our lives easier.</p>
+<p>Sometimes the idea of doing useless and challenging things excites me, implementing the <a href="https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List">list monad</a> in <a href="https://scratch.mit.edu/">scratch</a> was one of those. Scratch already has implemented the List datatype making our lives easier.</p>
 <p>To make things simple, I'll try to create the basic four functions needed to implement the list monad:</p>
 <ul>
 <li><code>map    :: (a -&gt; b) -&gt; [a] -&gt; [b]</code>&nbsp; &nbsp; - for applying a function to all elements of a list</li>
@@ -68,19 +68,19 @@
 <p>Let's analyze the function successor written in c (left), which is implemented in assembly (right).
 <img alt="bit" src="../img/assembly-succ.png" /></p>
 <p>We can see that it uses the auxiliary registry EAX to "return" the result. This means the function that is calling succ will assume the result is going to end up stored in the EAX variable. So creating an EAX variable in Scratch with the same purpose seems reasonable.</p>
-<p>Here is the definition of successor, predessecor, and identity function in scratch:
+<p>Here is the definition of successor, predecessor, and identity function in scratch:
 <img alt="bit" src="../img/scratch-succ.png" /></p>
 <h2>Solving  higher order</h2>
 <p>New problems start to emerge when I want to apply a specific function without being hardcoded. This means that the definition of map is going to be the same regardless of the function for which I want to map each element.</p>
-<p>I can't pass functions as arguments in scratch, but I can pass strings. I created a function with the sole purpose of running and applying arguments to functions. To simplify, I'm only using functions of ariety 1, and I have to manually insert them here:</p>
+<p>I can't pass functions as arguments in scratch, but I can pass strings. I created a function with the sole purpose of running and applying arguments to functions. To simplify, I'm only using functions of arity 1, and I have to manually insert them here:</p>
 <p><img alt="bit" src="../img/scratch-apply.png" /></p>
 <h2>Map</h2>
 <p>To map each element, I'm assuming there's already content in a list registry. Because there's no return statement, after applying the function to each element, I have to get back the result from EAX.</p>
 <p><img alt="bit" src="../img/scratch-map.png" /></p>
 <h2>Return</h2>
-<p>How I'm I going to make a function that creates lists? This time assembly was't the solution, because the only way to create a list is to click in "add list" button. I could, in theory, pre-create X amount of lists but still I wouldn't be able to know which one to use. </p>
+<p>How am I going to make a function that creates lists? This time assembly wasn't the solution, because the only way to create a list is to click in "add list" button. I could, in theory, pre-create X amount of lists but still I wouldn't be able to know which one to use. </p>
 <h2>Join</h2>
-<p>It's impossible to perform a concatenation operation. Scract has this problem: I can access numbers and strings passed as
+<p>It's impossible to perform a concatenation operation. Scratch has this problem: I can access numbers and strings passed as
 arguments, but I can't access lists. My first try was using the "letter 1 of" block, which, when applied to nested lists,
 would take the first letter of the first list. This block would work if every element of those lists was only 1 character
 long. This means I can't iterate through nested lists without being hardcoded. </p>
