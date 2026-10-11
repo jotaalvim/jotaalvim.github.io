@@ -1,25 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>João Alvim</title>
+    <title>Is it feasible to create the List Monad in Scratch? — João Alvim</title>
     <meta charset="utf-8">
-    <!-- ensures proper rendering for mobile 
+    <!-- ensures proper rendering for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    -->
 
     <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../style.css">
-
+    <meta name="keywords" content="scratch, functional programming, monads, programming languages">
+    <meta name="description" content="Is it feasible to create the List Monad in Scratch? - 2024-02-04">
     <meta property="og:title" content="Is it feasible to create the List Monad in Scratch?">
     <meta property="og:description" content="Is it feasible to create the List Monad in Scratch? - 2024-02-04">
-    <meta property="og:image" content="../../img/rubiks2.png">
-
+    <meta property="og:image" content="https://jotaalvim.github.io/img/rubiks2.png">
   </head>
 
   <body>
@@ -29,7 +27,7 @@
           <div class="navbar-header">
               <a class="navbar-brand" href="../index.html">
                   <div class="d-flex align-items-center">
-                      <img src="../img/rubiks2.png" alt="rubik" style="width:37%">
+                      <img src="../img/perfil-logo.jpg" alt="João Alvim">
                       <span class="ml-auto">João Alvim</span>
                   </div>
               </a>
@@ -42,9 +40,14 @@
       </div>
   </nav>
 
-   
-    <div class="container mx-auto" style="max-width:50%;">
-<h1>Is it feasible to create the List Monad in Scratch?</h1>
+
+    <div class="container content">
+
+      <h1>Is it feasible to create the List Monad in Scratch?</h1>
+      <p class="post-meta">
+        <span class="date">2024-02-04</span>
+        <a class="tag" href="../blog.html?q=scratch">scratch</a><a class="tag" href="../blog.html?q=functional+programming">functional programming</a><a class="tag" href="../blog.html?q=monads">monads</a><a class="tag" href="../blog.html?q=programming+languages">programming languages</a>
+      </p>
 <p>Sometimes the idea of doing unuseful and challenging things excites me, implementing the <a href="https://en.wikibooks.org/wiki/Haskell/Understanding_monads/List">list monad</a> in <a href="https://scratch.mit.edu/">scratch</a> was one of those. Scratch already has implemented the List datatype making our lives easier.</p>
 <p>To make things simple, I'll try to create the basic four functions needed to implement the list monad:</p>
 <ul>
@@ -63,17 +66,17 @@
 <p>To my surprise, there's already a very similar programming language, Assembly!</p>
 <h2>Dealing with return statements</h2>
 <p>Let's analyze the function successor written in c (left), which is implemented in assembly (right).
-<img alt="bit" src="/img/assembly-succ.png" /></p>
+<img alt="bit" src="../img/assembly-succ.png" /></p>
 <p>We can see that it uses the auxiliary registry EAX to "return" the result. This means the function that is calling succ will assume the result is going to end up stored in the EAX variable. So creating an EAX variable in Scratch with the same purpose seems reasonable.</p>
 <p>Here is the definition of successor, predessecor, and identity function in scratch:
-<img alt="bit" src="/img/scratch-succ.png" /></p>
+<img alt="bit" src="../img/scratch-succ.png" /></p>
 <h2>Solving  higher order</h2>
 <p>New problems start to emerge when I want to apply a specific function without being hardcoded. This means that the definition of map is going to be the same regardless of the function for which I want to map each element.</p>
 <p>I can't pass functions as arguments in scratch, but I can pass strings. I created a function with the sole purpose of running and applying arguments to functions. To simplify, I'm only using functions of ariety 1, and I have to manually insert them here:</p>
-<p><img alt="bit" src="/img/scratch-apply.png" /></p>
+<p><img alt="bit" src="../img/scratch-apply.png" /></p>
 <h2>Map</h2>
 <p>To map each element, I'm assuming there's already content in a list registry. Because there's no return statement, after applying the function to each element, I have to get back the result from EAX.</p>
-<p><img alt="bit" src="/img/scratch-map.png" /></p>
+<p><img alt="bit" src="../img/scratch-map.png" /></p>
 <h2>Return</h2>
 <p>How I'm I going to make a function that creates lists? This time assembly was't the solution, because the only way to create a list is to click in "add list" button. I could, in theory, pre-create X amount of lists but still I wouldn't be able to know which one to use. </p>
 <h2>Join</h2>

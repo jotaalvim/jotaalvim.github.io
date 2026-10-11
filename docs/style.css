@@ -21,14 +21,6 @@ p {
     }
 }
 
-/* a full-size circle crowds a phone screen */
-@media (max-width: 767px) {
-    .navbar-brand img {
-        width: 52px;
-        height: 52px;
-    }
-}
-
 .navbar-nav li a {
     font-size: 25px; 
 }
@@ -48,6 +40,14 @@ p {
     object-fit: cover;   /* square crop of a portrait photo, no squashing */
     border-radius: 50%;
     margin-right: 10px;
+}
+
+/* a full-size circle crowds a phone screen */
+@media (max-width: 767px) {
+    .navbar-brand img {
+        width: 52px;
+        height: 52px;
+    }
 }
 
 .navbar-brand span {
