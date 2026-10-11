@@ -32,4 +32,4 @@ Aliás pode não ser boa solução, transações com essa moeda são em muitos p
 # Futuro do Bitcoin
 Penso que o bitcoin é bom mas não vai "salvar o mundo" como as notícias sugerem. Porque o sistema financeiro tradicional é controlado pelo governo.
 Qual seria a sua reação se lhe retira-se-mos o controlo do sistema monetário? Já não podiam resolver tudo a imprimir e manipular dinheiro.
-Provavelmente o bitcoin existirá em paralelo e num impasse com o dinheiro "normal" porque os governos não vão ceder ao controlo do dinheiro.
+Provavelmente o bitcoin existirá em paralelo e num impasse com o dinheiro "normal" porque os governos não vão ceder ao controlo do dinheiro. Digo isto como se fosse uma coisa má os governos controlar o sistema monetário. Também não é claro se quermos mesmo perder o controlo dos dinheiro, afinal de contas não dá jeito controlar a inflação artificalmente?
