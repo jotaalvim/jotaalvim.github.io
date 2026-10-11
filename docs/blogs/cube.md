@@ -1,4 +1,5 @@
 2025-04-21
+keywords: logic, computability, philosophy, formal methods
 # Epistemic Limits of Computation
 
 Kurt Gödel, in his Incompleteness Theorems, states that an expressive formal system cannot be both consistent and complete at the same time. This leads to some unintuitive consequences, such as the existence of true statements that cannot be proven within the system, or that a system cannot prove its own consistency.

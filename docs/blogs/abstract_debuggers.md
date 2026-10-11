@@ -1,4 +1,5 @@
 2025-08-01
+keywords: debugging, program analysis, formal methods, computability
 # Can Debuggers Think Like Humans? Abstract Debugging
 
 Can abstract debugging be more expressive, and therefore not only superior to traditional debugging, but also lead to a deeper understanding of program behavior?

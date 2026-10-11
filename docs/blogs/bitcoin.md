@@ -1,4 +1,5 @@
 2023-12-01
+keywords: economics, bitcoin, português
 # Bitcoin
 
 O bitcoin é uma moeda considerada forte porque é difícil produzir em grandes quantidades. 

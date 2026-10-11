@@ -1,4 +1,5 @@
 2025-07-29
+keywords: linguistics, semantics, philosophy, português
 # Reflexão prática da natureza das linguagens
 
 Numa conversa em Hamburgo, no verão de 2024, enquanto tomávamos chá à meia noite com outros estagiários no DESY, o alemão Konrad lançou uma pergunta curiosa:

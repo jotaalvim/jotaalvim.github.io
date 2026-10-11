@@ -1,4 +1,5 @@
 2024-05-06
+keywords: haskell, functional programming, monads, tutorial
 # Going Monadic
 
 This is tutorial explains how to make a script to remove duplicated files in a directory in Haskell.

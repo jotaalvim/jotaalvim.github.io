@@ -1,4 +1,5 @@
 2026-04-17
+keywords: programming languages, linguistics, semantics, philosophy
 # What even is a Programming Language
 
 The essence of a programming languages is quite unique in contrast to a natural language. Programming Languages (PLs) are seen as an interface for humans to talk to the machine. Their vocabulary is reduced to a minimum, and they are made so that each symbol does not have ambiguity in its meaning, making it reliable.

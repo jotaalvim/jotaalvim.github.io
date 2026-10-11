@@ -1,4 +1,5 @@
 2024-04-29
+keywords: chess
 # My best chess game, so far
 
 Game played in the Open Queima das Fitas in 2024 against **IM José Veiga**.

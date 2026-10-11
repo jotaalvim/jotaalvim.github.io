@@ -1,4 +1,5 @@
 2024-02-04
+keywords: scratch, functional programming, monads, programming languages
 # Is it feasible to create the List Monad in Scratch?
 
 

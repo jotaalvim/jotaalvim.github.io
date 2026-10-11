@@ -1,4 +1,5 @@
 2026-02-26
+keywords: ai, philosophy, consciousness
 # How Natural is Artifical Intelligent?
 
 TLDR:
