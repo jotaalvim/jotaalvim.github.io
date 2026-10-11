@@ -15,4 +15,4 @@ Similarly, [Abstract Debuggers](https://dl.acm.org/doi/10.1145/3689492.3690053) 
 Is this technique actually better for refining hypotheses about programs by exploring the results of all possible execution paths? 
 
 
-One may argue that abstract debuggers are wrong as they may reach a somewhat incorrect results due to over-approximations. We might reach an abstraction that is impossible to reach on the concrete original program. Even if "wrong" I believe that they're still useful because humans still find meaning in "incorrect" things such as analogies. Even quantum-mechanics, besides ultra precise prediction does not vividly correspond to nature, and still people use it.
+One may argue that abstract debuggers are wrong as they may reach somewhat incorrect results due to over-approximations. We might reach an abstraction that is impossible to reach on the concrete original program. Even if "wrong" I believe that they're still useful because humans still find meaning in "incorrect" things such as analogies. Even quantum-mechanics, besides ultra precise prediction does not vividly correspond to nature, and still people use it.

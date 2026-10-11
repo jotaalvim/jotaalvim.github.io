@@ -1,6 +1,6 @@
 2026-02-26
 keywords: ai, philosophy, consciousness
-# How Natural is Artifical Intelligent?
+# How Natural is Artificial Intelligence?
 
 TLDR:
 I think the simple architecture brought unbelievable results. The way ChatGPT like AIs articulate is so aligned with reality and with what I observe that I
@@ -20,10 +20,10 @@ I’m not sure if I’m conscious myself. When I try to answer questions such as
 
 When people describe hallucinations, limited memory from conversations, getting questions wrong, bias, or providing false or misleading information, I never know if they are describing humans or AIs. It's hard to say when things are equal to each other, usually in mathematics, if I have functions `f`and `g`I can say they are equal if `f(x) = g(x)`.  Making me believe that humans and AIs are quite similar because they produce very similar results. In parallel, both start with an empty brain and are fed with information over time. On one hand, parents try and give children good information and show them good behaviors example as education. On the other hand, scientists give highly filtered data  for their models to learn and produce the best of the results.
 
-On of the biggest differences is that Humans are incredibly efficient compared with machines. The human brain requires a very small amount of energy and
-space to run. To run an Ai we need huge data centers with thousands of CPUs that need a lot of electricity. 
+One of the biggest differences is that Humans are incredibly efficient compared with machines. The human brain requires a very small amount of energy and
+space to run. To run an AI we need huge data centers with thousands of CPUs that need a lot of electricity. 
 
-When people say that the most recent Ai's architecture is not good enough to build a true intelligent being, they don't appreciate that this "simple" method
+When people say that the most recent AI's architecture is not good enough to build a true intelligent being, they don't appreciate that this "simple" method
 got so good results and is cognitively better than humans at many tasks.  One of the most recent achievements is winning the first place 2025 International Mathematical Olympiad ahead of humans. We can probably say the same things about humans. They are super rudimentary because their brain is built by stacking little things that  transport an electric signal in one direction only (neurons). 
  I cannot wrap my head around how one can remember things and concept such as memory don't make any sense. It looks impossible that a brain composed of
  such "simple" architecture,  functions so amazingly. The point I'm trying to make is if AI is not truly intelligent, neither are we. 

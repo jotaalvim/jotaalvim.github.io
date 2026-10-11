@@ -2,7 +2,7 @@
 keywords: linguistics, semantics, philosophy, português
 # Reflexão prática da natureza das linguagens
 
-Numa conversa em Hamburgo, no verão de 2024, enquanto tomávamos chá à meia noite com outros estagiários no DESY, o alemão Konrad lançou uma pergunta curiosa:
+Numa conversa em Hamburgo, no verão de 2024, enquanto tomávamos chá à meia-noite com outros estagiários no DESY, o alemão Konrad lançou uma pergunta curiosa:
 
 > "Porque é que as palavras podem ter vários significados? Não seria mais simples, para fins de comunicação, que cada coisa tivesse apenas uma palavra associada, e cada palavra um único significado?"
 
@@ -14,11 +14,11 @@ Também não é claro como dar nomes a conceitos abstratos, como emoções e sen
 
 Quando procuramos a verdade, na forma de raciocínio ou a fazer ciência, temos que levar as coisas o mais literal possível, caso
 contrário abrimos portas à imprecisão. O que faz uma linguagem mais ambígua não é a quantidade de símbolos ou palavras
-expressáveis, mas o nosso comportamento e interpretaçao perante elas.
+expressáveis, mas o nosso comportamento e interpretação perante elas.
 
 
 ---
 
-Em linguagens formais, como a matemática, evita-se a ambiguidade. Por isso, o número de significados por símbolo é mais reduzido do que, por exemplo, na linguagem natural. No extremo oposto, considero a música a linguagem mais abstrata, onde cada símbolo como notas ou acordes tem o máximo de singificados possíveis.
+Em linguagens formais, como a matemática, evita-se a ambiguidade. Por isso, o número de significados por símbolo é mais reduzido do que, por exemplo, na linguagem natural. No extremo oposto, considero a música a linguagem mais abstrata, onde cada símbolo como notas ou acordes tem o máximo de significados possíveis.
 
 ![injectivity](/img/inje.png)

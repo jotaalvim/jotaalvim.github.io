@@ -15,22 +15,22 @@ Assemelha-se ao ouro, porque não se destrói com facilidade e não se pode impr
 O padrão de ouro está associado ao crescimento de muitas sociedades. Uma das vantagens é que "não desvaloriza"
 , existe equilíbrio nos preços e facilita investimento e negócios internacionais.
 
-Só é possível prosperar se houver estabilidade nos preços a longo prazo. Por exemplo durante a Belle Époque houve um crescimento exponencial em muitos países que podem ser atribuídos a esta estabilidade. Outros exemplos são o império Bizantico e o Romano (primeiro sec. da pax romana).
+Só é possível prosperar se houver estabilidade nos preços a longo prazo. Por exemplo durante a Belle Époque houve um crescimento exponencial em muitos países que podem ser atribuídos a esta estabilidade. Outros exemplos são o império Bizantino e o Romano (primeiro sec. da pax romana).
 
 Quando não há estabilidade, por exemplo, as taxas de 115% inflação anual na Argentina dificultam as
 pessoas a pouparem e investirem. Sentem-se obrigadas a gastar todo o seu dinheiro
 porque no próximo mês vale menos ~10% do que valia. Como é suposto as pessoas pouparem e investirem nessas situações?
 
 # Desvantagens
-Se o bitcoin é forma de fugir ao sistema moentário controlado por terceiros, porque é que a maioria das pessoas
+Se o bitcoin é forma de fugir ao sistema monetário controlado por terceiros, porque é que a maioria das pessoas
 que vive em países onde a inflação é alta, 115% como Argentina ou 80% como a Turquia, não as usam?
 
-Na Argentina as pessoas compram dollars para fugir a inflação da sua moeda. Parece que o bitcoin não está a ser usado como seu intuito original. 
+Na Argentina as pessoas compram dólares para fugir à inflação da sua moeda. Parece que o bitcoin não está a ser usado como seu intuito original. 
 
 Aliás pode não ser boa solução, transações com essa moeda são em muitos países declaradas ilegais pelos governos. 
 
 
 # Futuro do Bitcoin
 Penso que o bitcoin é bom mas não vai "salvar o mundo" como as notícias sugerem. Porque o sistema financeiro tradicional é controlado pelo governo.
-Qual seria a sua reação se lhe retira-se-mos o controlo do sistema monetário? Já não podiam resolver tudo a imprimir e manipular dinheiro.
-Provavelmente o bitcoin existirá em paralelo e num impasse com o dinheiro "normal" porque os governos não vão ceder ao controlo do dinheiro. Digo isto como se fosse uma coisa má os governos controlar o sistema monetário. Também não é claro se quermos mesmo perder o controlo dos dinheiro, afinal de contas não dá jeito controlar a inflação artificalmente?
+Qual seria a sua reação se lhe retirássemos o controlo do sistema monetário? Já não podiam resolver tudo a imprimir e manipular dinheiro.
+Provavelmente o bitcoin existirá em paralelo e num impasse com o dinheiro "normal" porque os governos não vão ceder ao controlo do dinheiro. Digo isto como se fosse uma coisa má os governos controlar o sistema monetário. Também não é claro se queremos mesmo perder o controlo do dinheiro, afinal de contas não dá jeito controlar a inflação artificialmente?
