@@ -1,21 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>João Alvim</title>
+    <title>Blog — João Alvim</title>
     <meta charset="utf-8">
-    <!-- ensures proper rendering for mobile 
+    <!-- ensures proper rendering for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    -->
 
     <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-
   </head>
 
   <body>
@@ -25,7 +22,7 @@
           <div class="navbar-header">
               <a class="navbar-brand" href="index.html">
                   <div class="d-flex align-items-center">
-                      <img src="img/rubiks2.png" alt="rubik" style="width:37%">
+                      <img src="img/perfil-logo.jpg" alt="João Alvim">
                       <span class="ml-auto">João Alvim</span>
                   </div>
               </a>
@@ -33,93 +30,131 @@
           <ul class="nav navbar-nav navbar-right">
               <li><a href="blog.html">Blog</a></li>
               <li><a href="vitae.html">Curriculum Vitæ</a></li>
-              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
           </ul>
       </div>
   </nav>
 
-   
-    <div class="container mx-auto" style="max-width:50%;">
 
-      <li>
-        <ul>
-          <a href="blogs/languages.html"><h3>What even is a Programming Language</h3></a>
-          <p style="font-size: 17px;">2026-04-17</p>
-        </ul>
-      </li>
-      <br>
+    <div class="container content content-wide">
 
-      <li>
-        <ul>
-          <a href="blogs/ai.html"><h3>How Natural is Artifical Intelligent?</h3></a>
-          <p style="font-size: 17px;">2026-02-26</p>
-        </ul>
-      </li>
-      <br>
+      <div class="blog-layout">
 
-      <li>
-        <ul>
-          <a href="blogs/abstract_debuggers.html"><h3>Can Debuggers Think Like Humans? Abstract Debugging</h3></a>
-          <p style="font-size: 17px;">2025-08-01</p>
-        </ul>
-      </li>
-      <br>
+        <div id="posts">
+          <a class="post" href="blogs/languages.html" data-keywords="programming languages|linguistics|semantics|philosophy">
+            <span class="post-date">2026-04-17</span>
+            <span class="post-title">What even is a Programming Language</span>
+          </a>
+          <a class="post" href="blogs/ai.html" data-keywords="ai|philosophy|consciousness">
+            <span class="post-date">2026-02-26</span>
+            <span class="post-title">How Natural is Artifical Intelligent?</span>
+          </a>
+          <a class="post" href="blogs/abstract_debuggers.html" data-keywords="debugging|program analysis|formal methods|computability">
+            <span class="post-date">2025-08-01</span>
+            <span class="post-title">Can Debuggers Think Like Humans? Abstract Debugging</span>
+          </a>
+          <a class="post" href="blogs/reflexao_pratica_da_natureza_das_linguagens.html" data-keywords="linguistics|semantics|philosophy|português">
+            <span class="post-date">2025-07-29</span>
+            <span class="post-title">Reflexão prática da natureza das linguagens</span>
+          </a>
+          <a class="post" href="blogs/cube.html" data-keywords="logic|computability|philosophy|formal methods">
+            <span class="post-date">2025-04-21</span>
+            <span class="post-title">Epistemic Limits of Computation</span>
+          </a>
+          <a class="post" href="blogs/going_monadic.html" data-keywords="haskell|functional programming|monads|tutorial">
+            <span class="post-date">2024-05-06</span>
+            <span class="post-title">Going Monadic</span>
+          </a>
+          <a class="post" href="blogs/best_game.html" data-keywords="chess">
+            <span class="post-date">2024-04-29</span>
+            <span class="post-title">My best chess game, so far</span>
+          </a>
+          <a class="post" href="blogs/list_monad.html" data-keywords="scratch|functional programming|monads|programming languages">
+            <span class="post-date">2024-02-04</span>
+            <span class="post-title">Is it feasible to create the List Monad in Scratch?</span>
+          </a>
+          <a class="post" href="blogs/bitcoin.html" data-keywords="economics|bitcoin|português">
+            <span class="post-date">2023-12-01</span>
+            <span class="post-title">Bitcoin</span>
+          </a>
+          <a class="post" href="blogs/interstellar.html" data-keywords="physics|cinema|português">
+            <span class="post-date">2023-09-18</span>
+            <span class="post-title">Interstellar - Amor, a 5ª dimensão</span>
+          </a>
+          <p id="no-results" class="no-results" hidden>No posts with that keyword.</p>
+        </div>
 
-      <li>
-        <ul>
-          <a href="blogs/reflexao_pratica_da_natureza_das_linguagens.html"><h3>Reflexão prática da natureza das linguagens</h3></a>
-          <p style="font-size: 17px;">2025-07-29</p>
-        </ul>
-      </li>
-      <br>
+        <aside class="keyword-list">
+          <h2>keywords</h2>
+          <a class="kw kw-all" href="blog.html" data-kw="">all posts<span class="count">10</span></a>
+          <a class="kw" href="blog.html?q=philosophy" data-kw="philosophy">philosophy<span class="count">4</span></a>
+          <a class="kw" href="blog.html?q=portugu%C3%AAs" data-kw="português">português<span class="count">3</span></a>
+          <a class="kw" href="blog.html?q=computability" data-kw="computability">computability<span class="count">2</span></a>
+          <a class="kw" href="blog.html?q=formal+methods" data-kw="formal methods">formal methods<span class="count">2</span></a>
+          <a class="kw" href="blog.html?q=functional+programming" data-kw="functional programming">functional programming<span class="count">2</span></a>
+          <a class="kw" href="blog.html?q=linguistics" data-kw="linguistics">linguistics<span class="count">2</span></a>
+          <a class="kw" href="blog.html?q=monads" data-kw="monads">monads<span class="count">2</span></a>
+          <a class="kw" href="blog.html?q=programming+languages" data-kw="programming languages">programming languages<span class="count">2</span></a>
+          <a class="kw" href="blog.html?q=semantics" data-kw="semantics">semantics<span class="count">2</span></a>
+          <a class="kw" href="blog.html?q=ai" data-kw="ai">ai<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=bitcoin" data-kw="bitcoin">bitcoin<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=chess" data-kw="chess">chess<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=cinema" data-kw="cinema">cinema<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=consciousness" data-kw="consciousness">consciousness<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=debugging" data-kw="debugging">debugging<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=economics" data-kw="economics">economics<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=haskell" data-kw="haskell">haskell<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=logic" data-kw="logic">logic<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=physics" data-kw="physics">physics<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=program+analysis" data-kw="program analysis">program analysis<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=scratch" data-kw="scratch">scratch<span class="count">1</span></a>
+          <a class="kw" href="blog.html?q=tutorial" data-kw="tutorial">tutorial<span class="count">1</span></a>
+        </aside>
 
-      <li>
-        <ul>
-          <a href="blogs/cube.html"><h3>Epistemic Limits of Computation</h3></a>
-          <p style="font-size: 17px;">2025-04-21</p>
-        </ul>
-      </li>
-      <br>
+      </div>
 
-      <li>
-        <ul>
-          <a href="blogs/going_monadic.html"><h3>Going Monadic</h3></a>
-          <p style="font-size: 17px;">2024-05-06</p>
-        </ul>
-      </li>
-      <br>
+    <script>
+    (function () {
+      var posts = Array.prototype.slice.call(document.querySelectorAll('#posts .post'));
+      var keywords = Array.prototype.slice.call(document.querySelectorAll('.keyword-list .kw'));
+      var empty = document.getElementById('no-results');
+      var selected = '';
 
-      <li>
-        <ul>
-          <a href="blogs/best_game.html"><h3>My best chess game, so far</h3></a>
-          <p style="font-size: 17px;">2024-04-29</p>
-        </ul>
-      </li>
-      <br>
+      function apply(kw) {
+        selected = kw;
+        var shown = 0;
+        posts.forEach(function (post) {
+          var list = post.getAttribute('data-keywords').split('|');
+          var match = !kw || list.indexOf(kw) !== -1;
+          post.hidden = !match;
+          if (match) { shown++; }
+        });
+        keywords.forEach(function (link) {
+          var mine = link.getAttribute('data-kw') || '';
+          link.classList.toggle('active', mine === kw);
+        });
+        empty.hidden = shown !== 0;
+      }
 
-      <li>
-        <ul>
-          <a href="blogs/list_monad.html"><h3>Is it feasible to create the List Monad in Scratch?</h3></a>
-          <p style="font-size: 17px;">2024-02-04</p>
-        </ul>
-      </li>
-      <br>
+      keywords.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          if (e.metaKey || e.ctrlKey || e.shiftKey) { return; }  // let it open in a tab
+          e.preventDefault();
+          var kw = link.getAttribute('data-kw') || '';
+          if (kw && kw === selected) { kw = ''; }  // clicking the active one clears it
+          if (history.replaceState) {
+            history.replaceState(null, '',
+              kw ? '?q=' + encodeURIComponent(kw) : location.pathname);
+          }
+          apply(kw);
+        });
+      });
 
-      <li>
-        <ul>
-          <a href="blogs/bitcoin.html"><h3>Bitcoin</h3></a>
-          <p style="font-size: 17px;">2023-12-01</p>
-        </ul>
-      </li>
-      <br>
-
-      <li>
-        <ul>
-          <a href="blogs/interstellar.html"><h3>Interstellar - Amor, a 5ª dimensão</h3></a>
-          <p style="font-size: 17px;">2023-09-18</p>
-        </ul>
-      </li>
-      <br>
+      // ?q=haskell - set by the keyword links on each post, and by a shared URL
+      var q = (location.search.match(/[?&]q=([^&]*)/) || [])[1];
+      apply(q ? decodeURIComponent(q.replace(/\+/g, ' ')) : '');
+    })();
+    </script>
 
     <br>
     <br>

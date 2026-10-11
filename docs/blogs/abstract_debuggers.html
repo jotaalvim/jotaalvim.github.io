@@ -1,25 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>João Alvim</title>
+    <title>Can Debuggers Think Like Humans? Abstract Debugging — João Alvim</title>
     <meta charset="utf-8">
-    <!-- ensures proper rendering for mobile 
+    <!-- ensures proper rendering for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    -->
 
     <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../style.css">
-
+    <meta name="keywords" content="debugging, program analysis, formal methods, computability">
+    <meta name="description" content="Can Debuggers Think Like Humans? Abstract Debugging - 2025-08-01">
     <meta property="og:title" content="Can Debuggers Think Like Humans? Abstract Debugging">
     <meta property="og:description" content="Can Debuggers Think Like Humans? Abstract Debugging - 2025-08-01">
-    <meta property="og:image" content="../../img/rubiks2.png">
-
+    <meta property="og:image" content="https://jotaalvim.github.io/img/rubiks2.png">
   </head>
 
   <body>
@@ -29,7 +27,7 @@
           <div class="navbar-header">
               <a class="navbar-brand" href="../index.html">
                   <div class="d-flex align-items-center">
-                      <img src="../img/rubiks2.png" alt="rubik" style="width:37%">
+                      <img src="../img/perfil-logo.jpg" alt="João Alvim">
                       <span class="ml-auto">João Alvim</span>
                   </div>
               </a>
@@ -42,9 +40,14 @@
       </div>
   </nav>
 
-   
-    <div class="container mx-auto" style="max-width:50%;">
-<h1>Can Debuggers Think Like Humans? Abstract Debugging</h1>
+
+    <div class="container content">
+
+      <h1>Can Debuggers Think Like Humans? Abstract Debugging</h1>
+      <p class="post-meta">
+        <span class="date">2025-08-01</span>
+        <a class="tag" href="../blog.html?q=debugging">debugging</a><a class="tag" href="../blog.html?q=program+analysis">program analysis</a><a class="tag" href="../blog.html?q=formal+methods">formal methods</a><a class="tag" href="../blog.html?q=computability">computability</a>
+      </p>
 <p>Can abstract debugging be more expressive, and therefore not only superior to traditional debugging, but also lead to a deeper understanding of program behavior?</p>
 <p>Typically debuggers are of a somewhat rudimentary nature. There are a lot of varieties of them, traditional debuggers allow developers to step through the execution of a program and inspect the contents of variables. If the person does not find the bug in the first few steps, they may have to restart the process with different inputs and values. Other techniques such as <strong>Multiverse Debugging</strong>, uses a brute-force like approach. It explores the space of possible values in a controlled manner. This technique explores altering values at key decision points in our programs. Or even <strong>Concolic debugging</strong>, a hybrid of concrete and symbolic execution. In contrast to random testing, concolic execution uses symbolic reasoning to find the values that split the execution paths. It allows for exploring multiple execution scenarios more efficiently than pure brute force and is very useful in debugging non-deterministic programs. However, these approaches have a few drawbacks. Computing power is still not enough to tackle complex problems, and human ability to effectively utilize these tools remains a bottleneck.  </p>
 <p>Instead of relying solely on trial and error or brute force, suppose we adapted a debugger to mimic how humans think and make sense of complex problems. A good example of a real-world hard problem is chess. Chess players cannot analyze all possible positions, so to bridge this gap, they study positional concepts and principles and rules that help them understand the game better. While computers can evaluate millions of positions per second, humans rely on abstractions and heuristics to make decisions. Computers can tell us whether a move is good or bad and provide a long sequence of moves to justify it. But humans need some kind of abstraction or rule of thumb to understand why a move is good or bad.</p>
