@@ -1,5 +1,5 @@
 2026-08-12
-keywords: português, eclipse
+keywords: português, eclipse, principezinho
 ## Eclipse Total
 
 Devido a fenómenos naturais, hoje assisti a 2 pores do sol [(eclise + por do sol normal)](https://www.timeanddate.com/eclipse/in/portugal?iso=20260812). Pergunto-me se chegará o dia onde o Universo irá apresentar-me 3 pores do sol?
