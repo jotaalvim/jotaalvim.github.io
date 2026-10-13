@@ -9,7 +9,7 @@ Ha um texto clássico onde um principezinho admite ter assistido a 43 pores de s
 Confesso ter alguma inveja, mas não percebo porque é que ele se deu a esse trabalho todo.
 Toda a gente sabe que se andarmos para o lado, em direção aos polos de um planeta, o por do sol fica mais lento. Nalgumas cidades perto dos polos o por do sol demora meses.
 
-Por que é que ele, em vez de perseguir sol, não andou na diagonal em direção a um dos polos? Assim podia experienciar de um por do sol de maior duração. Seria isso mais agradável?
+Por que é que ele, em vez de perseguir sol, não andou na diagonal em direção a um dos polos? Assim podia experienciar um por do sol de maior duração. Seria isso mais agradável?
 
 Existe uma razão, não é explicado no livro, mas o principezinho certamente que se apercebeu que os pores do sol foram
-criados para ter aquela duração. Da mesma forma, por que é que alguém haveria de colocar uma música em velocidade 0.5x para a contemplar melhor?
+criados para ter aquela duração. Da mesma forma, por que é que alguém haveria de colocar uma música em velocidade 0.5x com o obejtivo de a contemplar melhor?
