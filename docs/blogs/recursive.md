@@ -1,9 +1,9 @@
 2026-10-15
 keywords: recursion, functional programming, infinity 
 # Recursive Blog
-I find the idea that a procedure applied to itself repeatedly is astonishing. It fascinates me profoundly as it seems like magic how
-recursion even works. Whether it's on functional programming or in fractals like the [Mandelbrot set](https://websim.com/@ticksclone/fractal-explorer-4)
-there's an undeniable beauty in those patterns. The hard thing  with recursion is not applying a function to itself but rather when to stop applying it. Even I don't know when to stop
+
+I find the concept of a procedure calling itself profoundly astonishing. It fascinates me how elegant and simple recursion can be and how it seems like magic. Whether it's on functional programming or visually in fractals like the [Mandelbrot set](https://websim.com/@ticksclone/fractal-explorer-4)
+there's an undeniable beauty in those patterns. The hard thing with recursion isn't self-calling but rather the base case when to stop calling it. Even I don't always know when to stop.
 
 <button id="loadBtn">Here's a good reference on the subject</button>
 
