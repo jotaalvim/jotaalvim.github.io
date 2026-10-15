@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recursive Blog — João Alvim</title>
+    <meta charset="utf-8">
+    <!-- ensures proper rendering for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="keywords" content="recursion, functional programming, infinity">
+    <meta name="description" content="Recursive Blog - 2026-10-15">
+    <meta property="og:title" content="Recursive Blog">
+    <meta property="og:description" content="Recursive Blog - 2026-10-15">
+    <meta property="og:image" content="https://jotaalvim.github.io/img/rubiks2.png">
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-default">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="../index.html">
+                  <div class="d-flex align-items-center">
+                      <img src="../img/perfil-logo.jpg" alt="João Alvim">
+                      <span class="ml-auto">João Alvim</span>
+                  </div>
+              </a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../vitae.html">Curriculum Vitæ</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+
+
+    <div class="container content">
+
+      <h1>Recursive Blog</h1>
+      <p class="post-meta">
+        <span class="date">2026-10-15</span>
+        <a class="tag" href="../blog.html?q=recursion">recursion</a><a class="tag" href="../blog.html?q=functional+programming">functional programming</a><a class="tag" href="../blog.html?q=infinity">infinity</a>
+      </p>
+<p>I find the idea that a procedure can be applied to itself repeatedly astonishing. It fascinates me profoundly as it seems like magic how
+recursion even works. Whether it's on functional programming or in fractals like the <a href="https://websim.com/@ticksclone/fractal-explorer-4">Mandelbrot set</a>
+there's an undeniable beauty in those patterns. The hard thing  with recursion is not applying a function to itself but rather when to stop apllying it. Even I don't know when to stop</p>
+<p><button id="loadBtn">Here's a good reference on the subject</button></p>
+<p><iframe
+  id="myIframe"
+  width="100%"
+  height="600px"
+  style="border: none;">
+</iframe>
+</p>
+<script>
+  const btn = document.getElementById('loadBtn');
+  const iframe = document.getElementById('myIframe');
+
+  btn.addEventListener('click', () => {
+
+    // Browsers block a URL already loaded by more than one ancestor frame so give each nesting level a different query string
+    const depth = Number(new URLSearchParams(location.search).get('depth') || 0);
+
+    iframe.src = location + '?depth=' + (depth + 1);
+
+    btn.disabled = true;
+  });
+</script>
+    <br>
+    <br>
+    </div>
+  </body>
+</html>
