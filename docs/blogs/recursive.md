@@ -4,7 +4,7 @@ keywords: recursion, functional programming, infinity
 
 I find the idea that a procedure can be applied to itself repeatedly astonishing. It fascinates me profoundly as it seems like magic how
 recursion even works. Whether it's on functional programming or in fractals like the [Mandelbrot set](https://websim.com/@ticksclone/fractal-explorer-4)
-there's an undeniable beauty in those patterns. The hard thing  with recursion is not applying a function to itself but rather when to stop apllying it. Even I don't know when to stop
+there's an undeniable beauty in those patterns. The hard thing  with recursion is not applying a function to itself but rather when to stop applying it. Even I don't know when to stop
 
 <button id="loadBtn">Here's a good reference on the subject</button>
 
