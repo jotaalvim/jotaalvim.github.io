@@ -1,0 +1,160 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx} % Times-like font
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=0.8em, labelindent=0pt, labelwidth=0.5em, labelsep=0.3em, align=left,
+  itemsep=0pt, topsep=1pt, parsep=0pt, label=\textbullet}
+
+% ---------- Layout macros ----------
+\definecolor{rulegray}{gray}{0.65}
+\newlength{\cvlabelwidth}\setlength{\cvlabelwidth}{3cm}
+
+% Left-column label; zero depth so multi-line labels don't push the content down
+\newcommand{\cvlabel}[1]{%
+  \raisebox{0pt}[\height][0pt]{\parbox[t]{\cvlabelwidth}{\raggedright\textbf{#1}}}\hfill}
+
+% \cvsection{LABEL}{content}: label in the left column, content on the right
+\newcommand{\cvsection}[2]{%
+  \par\noindent\textcolor{rulegray}{\rule{\linewidth}{0.4pt}}\par\vspace{5pt}
+  \begin{list}{}{\setlength{\leftmargin}{\cvlabelwidth}\setlength{\labelwidth}{\cvlabelwidth}%
+      \setlength{\labelsep}{0pt}\setlength{\topsep}{0pt}\setlength{\itemsep}{0pt}%
+      \setlength{\parsep}{0pt}}
+    \item[{\cvlabel{#1}}]#2
+  \end{list}
+  \vspace{8pt}
+}
+
+% \entry{title}{date}{role}{place}: two lines, left and right aligned
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill\textbf{#2}\par
+  \ifx&#3&\else\textit{#3}\hfill\textit{#4}\par\fi
+}
+
+% \project{name}{url}{description}
+\newcommand{\project}[3]{%
+  \textbf{#1}\quad\href{#2}{\underline{#1}}\par
+  \begin{itemize}\item #3\end{itemize}
+  \vspace{3pt}
+}
+
+\newcommand{\gap}{\vspace{5pt}}
+
+\begin{document}
+
+% ---------- Header ----------
+{\raggedleft\fontsize{24}{28}\selectfont JOÃO ALVIM\par}
+\vspace{4pt}
+{\small\noindent
+Braga, Portugal \textbar{} +351 934662832 \textbar{}
+\href{mailto:joaoalvim179@proton.me}{\underline{joaoalvim179@proton.me}} \textbar{}
+\href{https://www.linkedin.com/in/joao-alvim}{\underline{linkedin/joao-alvim}} \textbar{}
+\href{https://github.com/jotaalvim}{\underline{github.com/jotaalvim}} \textbar{}
+\href{https://jotaalvim.github.io}{\underline{jotaalvim.github.io}}\par}
+\vspace{6pt}
+
+% ---------- Education ----------
+\cvsection{EDUCATION}{%
+  \entry{University of Minho}{October 2020 - October 2025}{Master's, Computer Engineering Formal Methods}{}\gap
+  \entry{Ghent University, Belgium}{October 2024 - March 2025}{Erasmus -- Master's, Computer Engineering (1 semester)}{Belgium}\gap
+  \entry{Escola Secundária Alberto Sampaio}{September 2017 - June 2020}{Secondary Education, Sciences}{}\gap
+  \entry{Conservatório Bomfim}{September 2017 - June 2020}{Secondary Education, Music -- 8th Grade in Piano}{}
+}
+
+% ---------- Work experience ----------
+\cvsection{WORK\\EXPERIENCE}{%
+  \entry{INVISIBLE LAB}{January 2026 - Present}{Backend Software Engineer}{}
+  Developed robust backend services in Golang backed by PostgreSQL. Designed external API
+  integrations and delivered key features for Infocarro and a non-profit association platform.\par\gap
+
+  \entry{DESY}{June 2024 - August 2024}{Summer Internship}{Hamburg, Germany}
+  Developed a monitoring dashboard for ASAPO -- high performance distributed streaming platform for DESY a German research center operating particle accelerators.
+  \par\gap
+
+  \entry{2022 - 2025}{}{Programming Tutoring to Undergraduates}{Braga}
+  Taught Haskell and C to 4 and 5 students, Natural Language Processing with Python to 1 student,
+  and statistics with R.\par\gap
+
+  \entry{Chess Club, University of Minho}{2022 - 2024}{Coach}{Braga}
+  Gave some weekly lessons where we analyzed textbook positions and also organized chess
+  tournaments.\par\gap
+
+  \entry{Tempos Brilhantes}{September 2023 - June 2024}{Elementary Chess Teacher}{Braga}
+  Biweekly extracurricular chess class to primary school kids.\par\gap
+
+  \entry{Technician in High-Altitude Work}{1 week}{}{}\gap
+  \entry{Monitor, Diver Lanhoso Adventure Park}{2 weeks}{}{}
+}
+
+% ---------- Publications ----------
+\cvsection{PUBLICATIONS}{%
+  \begin{itemize}[topsep=0pt]
+    \item Online Abstract Debugging. SLATE 2026 -- A debugging framework that allows abstract
+      interpretation to be applied on-demand, gaining precision at specific points of program
+      analysis before obtaining the full static results. It allows the user to unroll loops and
+      explore intermediate states where one would normally lose precision.\quad
+      \href{https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.SLATE.2026.20}{\underline{Out of the Loop no More}}
+  \end{itemize}
+}
+
+% ---------- Projects ----------
+\cvsection{PROJECTS}{%
+  \project{pocket-cube-solver}{https://github.com/jotaalvim/pocket-cube-solver}{Haskell solution to the Pocket Cube from Justin with.}
+
+  \project{Chess-Heatmaps}{https://github.com/jotaalvim/chess-heatmaps}{Represent chess moves as heat maps in Python.}
+
+  \project{QForms}{https://github.com/jotaalvim/QForms}{QuickForms is a self-hosted local form generation tool designed as an alternative to proprietary services like Google Forms. I've used Flask and my Python module is on PyPI.}
+
+  \project{vscode-ipma}{https://github.com/jotaalvim/ipma-vsc/tree/main/ipma-carta\#readme}{VS Code extension that shows a popup with a beautifull IPMA's weather map.}
+  \project{cbirds}{https://github.com/jotaalvim/cbirds}{Python module demonstrating combinator birds in point-free style.}
+  \project{shipslogs}{https://github.com/jotaalvim/shipslogs}{Python tool that simplifies keeping records of screenshots taken during events such as talks, meetings or online classes.}
+
+  \project{Instagram Puzzles Generator}{https://github.com/jotaalvim/instagram-puzzles-generator}{Automates generation of chess puzzle images published on my university chess club's Instagram.}
+  \project{chessredditstories}{https://www.tiktok.com/@chessredditstories}{Automated content creation that generates reels combining chess gameplay with Reddit stories using Python.}
+  \project{datalist}{https://github.com/jotaalvim/datalist}{Implementation of all functions in Haskell's Data.List module.}
+  \project{hmusik}{https://github.com/jotaalvim/hmusik}{Generating chord progressions with Haskell.}
+}
+
+% ---------- Technical skills ----------
+\cvsection{TECHNICAL\\SKILLS}{%
+  \textbf{Languages}: Portuguese (fluent), English (B2 exam)\par
+  \textbf{Programming}: Haskell, C, C++, Python, Java, TypeScript, JavaScript, LaTeX, SQL, Linux, VIM,
+  WebAssembly, Go, PostgreSQL, Machine Learning
+}
+
+% ---------- Awards ----------
+\cvsection{AWARDS}{%
+  \begin{itemize}[topsep=0pt]
+    \item \textbf{2nd place:} SEI 2021 Hackathon (shipslogs)
+    \item \textbf{1st place:} SEI 2025 \href{https://drive.google.com/drive/folders/1xnQhL0wbuDtT2qomy4DPXgj36mWrUCKh}{\underline{Programming Competition}}
+  \end{itemize}
+}
+
+% ---------- Volunteer ----------
+\cvsection{VOLUNTEER}{%
+  \entry{Camerata Minhota}{January 2023 - 2025}{}{}
+  Co-Founder and member of a Chamber Music group at University of Minho.\par\gap
+  \entry{Coderdojo}{January 2020 - January 2023}{Mentor}{}\gap
+  \entry{Recriativo, Núcleo de Estudantes de Engenharia Informática}{2021 - 2022}{Collaborator}{}
+}
+
+
+% ---------- Extracurricular ----------
+\cvsection{EXTRA-\\CURRICULAR}{%
+  \begin{itemize}[topsep=0pt]
+    \item Led a cat rescue from a 15 meter tree:
+      \href{https://ominho.pt/braga-escalador-resgata-gato-preso-ha-seis-dias-em-arvore-com-15-metros/}{\underline{Climber rescues cat trapped in 15 meter tree for six days}}
+    \item Federated chess and climbing athlete
+    \item Participated in the Bugsbyte 2023 and 2025 hackathons
+    \item Attended \href{https://ifl23.github.io/}{\underline{IFL 2023}} -- Implementation and Application of Functional Languages conference
+    \item De-Googled: self-host my own files, photos and calendar at home with Nextcloud, for privacy and freedom
+  \end{itemize}
+}
+\end{document}
